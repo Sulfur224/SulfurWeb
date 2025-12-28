@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Arial Black', 'Arial Bold', sans-serif;
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
     min-height: 100vh;
     color: #ffffff;
@@ -42,13 +42,14 @@ header {
 .logo {
     width: 120px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     filter: drop-shadow(0 0 15px rgba(77, 148, 255, 0.5));
 }
 
 header h1 {
     font-size: 4rem;
     font-weight: 900;
+    font-family: 'Impact', 'Arial Black', sans-serif;
     color: #ffffff;
     text-shadow: 
         0 0 10px rgba(255, 255, 255, 0.5),
@@ -91,7 +92,7 @@ header h1 {
 }
 
 .description {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     font-size: 1.1rem;
     font-weight: normal;
     line-height: 1.8;
