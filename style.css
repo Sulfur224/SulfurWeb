@@ -24,7 +24,7 @@ body {
 
 header {
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 20px 20px;
     animation: slideDown 1s ease-out;
 }
 
@@ -39,23 +39,26 @@ header {
     }
 }
 
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px rgba(77, 148, 255, 0.5));
+}
+
 header h1 {
     font-size: 4rem;
     font-weight: 900;
     color: #ffffff;
     text-shadow: 
-        0 0 10px #ffffff,
-        0 0 20px #ffffff,
-        0 0 30px #ffffff,
-        0 0 40px #4d94ff,
-        0 0 70px #4d94ff,
-        0 0 80px #4d94ff;
+        0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(77, 148, 255, 0.3);
     letter-spacing: 3px;
 }
 
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px;
     animation: fadeInUp 1.5s ease-out 0.5s both;
 }
 
@@ -75,18 +78,25 @@ header h1 {
     font-weight: bold;
     color: #ffffff;
     text-shadow: 
-        0 0 5px #ffffff,
-        0 0 10px #ffffff,
-        0 0 15px #6fb1ff,
-        0 0 20px #6fb1ff;
+        0 0 5px rgba(255, 255, 255, 0.4),
+        0 0 10px rgba(111, 177, 255, 0.3);
     letter-spacing: 2px;
 }
 
 .content {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
     animation: fadeInUp 1.8s ease-out 0.8s both;
+}
+
+.description {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #d0d0d0;
+    text-align: center;
 }
 
 footer {
@@ -99,13 +109,39 @@ footer {
     font-family: Arial, sans-serif;
 }
 
+.discord-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #5865F2, #7289DA);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3);
+}
+
+.discord-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(88, 101, 242, 0.5);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    .logo {
+        width: 80px;
+    }
+    
     header h1 {
         font-size: 2.5rem;
     }
     
     .slogan {
         font-size: 1.3rem;
+    }
+    
+    .description {
+        font-size: 1rem;
     }
 }
